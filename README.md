@@ -96,7 +96,6 @@ The application uses Firestore. The `patients` collection has documents with the
 | `lastName`   | `string` | Patient's last name.                       |
 | `dob`        | `string` | Patient's date of birth (YYYY-MM-DD).      |
 | `status`     | `string` | "Inquiry", "Onboarding", "Active", "Churned" |
-| `address`    | `string` | Patient's street address.                  |
 | `city`       | `string` | Patient's city.                            |
 | `state`      | `string` | Patient's state or province.               |
 | `zipCode`    | `string` | Patient's zip or postal code.              |
