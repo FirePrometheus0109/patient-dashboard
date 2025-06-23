@@ -70,9 +70,13 @@ export default function PatientTable({
         <Table className='flex-1'>
           <TableHeader className="sticky top-0 bg-white z-10">
             <TableRow>
-              <TableHead className="w-16 !text-center">No</TableHead>
               <TableHead
-                className='!text-center cursor-pointer hover:bg-gray-50 transition-colors'
+                className="w-16 !text-center"
+              >
+                No
+              </TableHead>
+              <TableHead
+                className='!text-center w-72 cursor-pointer hover:bg-gray-50 transition-colors'
                 onClick={() => onSort('name')}
               >
                 <div className="flex items-center justify-center gap-1">
@@ -81,7 +85,7 @@ export default function PatientTable({
                 </div>
               </TableHead>
               <TableHead
-                className='!text-center cursor-pointer hover:bg-gray-50 transition-colors'
+                className='!text-center w-64 cursor-pointer hover:bg-gray-50 transition-colors'
                 onClick={() => onSort('dob')}
               >
                 <div className="flex items-center justify-center gap-1">
@@ -90,7 +94,7 @@ export default function PatientTable({
                 </div>
               </TableHead>
               <TableHead
-                className='!text-center cursor-pointer hover:bg-gray-50 transition-colors'
+                className='!text-center w-52 cursor-pointer hover:bg-gray-50 transition-colors'
                 onClick={() => onSort('status')}
               >
                 <div className="flex items-center justify-center gap-1">
@@ -99,7 +103,7 @@ export default function PatientTable({
                 </div>
               </TableHead>
               <TableHead
-                className='!text-center cursor-pointer hover:bg-gray-50 transition-colors'
+                className='!text-center w-72 cursor-pointer hover:bg-gray-50 transition-colors'
                 onClick={() => onSort('location')}
               >
                 <div className="flex items-center justify-center gap-1">
@@ -107,7 +111,8 @@ export default function PatientTable({
                   {getSortIcon('location')}
                 </div>
               </TableHead>
-              <TableHead className="!text-center">Actions</TableHead>
+              <TableHead
+                className="!text-center w-52">Actions</TableHead>
             </TableRow>
           </TableHeader>
           <TableBody>
